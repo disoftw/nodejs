@@ -30,7 +30,7 @@ server.on('request', (req, res) => {
 server.listen(3000);
 ```
 
-When the server gets a request, it will try to serve the mentioned file asynchronously using the fs.readFile() method. The problem is the amount of memory it will consume. It will put the content of the file in the computer's memory before assigning it to the **response** object. By using the fs.createReadStream() method we can pipe the stream to the response object.
+When the server gets a request, it will try to serve the mentioned file asynchronously using the `fs.readFile()` method. The problem is the amount of memory it will consume. It will put the content of the file in the computer's memory before assigning it to the **response** object. By using the fs.createReadStream() method we can pipe the stream to the response object.
 
 ```js
 const fs = require('fs');
