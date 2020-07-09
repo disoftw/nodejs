@@ -1,4 +1,4 @@
-## Configurar Mongosse
+# Configurar Mongosse
 
 Para usar **Mongoose**, primero, instale el paquete y luego solicítelo. Para instalar, use el siguiente comando:
     $ npm install --save mongoose 

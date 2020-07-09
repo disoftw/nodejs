@@ -1,4 +1,4 @@
-## Instalar y configurar MongoDB
+# Instalar y configurar MongoDB
 
 En esta lección, vamos a configurar MongoDB en nuestro sistema. Puede encontrar la guía de instalación oficial [aquí](https://docs.mongodb.com/manual/installation/).
 

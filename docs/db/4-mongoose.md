@@ -1,4 +1,4 @@
-## ¿Qué es Mongosse?
+# ¿Qué es Mongosse?
 
 **Mongoose** es un intermediario entre MongoDB y el servidor (Node.js), lo que hace que las interacciones con una base de datos (crear, leer, escribir, etc.) sean muy simples.
 

@@ -36,7 +36,21 @@ Node.js® es un entorno de ejecución para JavaScript construido con el [motor d
 - [Node PG](https://node-postgres.com/)
 - [VSCode](https://code.visualstudio.com/download)
 
-# Instructor
+## Instructor
 
-<avatar>
-</avatar>
+- **Raul Novelo** - [@rnovec](https://github.com/rnovec)
+
+## Agradecimientos
+
+A las miembros de la división que contribuyeron a la traducción de este material al español.
+
+- **Luis Navarrete**
+- **Rafael Salazar**
+- **Paul Mena**
+- **Didier Crespo**
+- **Vicente Yah**
+
+## Acerca de este material
+
+Este material esta basado del **tutorial de Node.js** de la plataforma [SoloLearn]() y traducido al español con fines didácticos.
+

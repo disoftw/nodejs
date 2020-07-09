@@ -1,4 +1,4 @@
-## MongoDB Model
+# MongoDB Model
 
 Toda la configuración está hecha. Tenemos un MongoDB en funcionamiento y Mongoose está conectado a nuestra base de datos. ¡Ahora tenemos que volver a nuestro proyecto y comenzar a escribir JavaScript nuevamente!
 

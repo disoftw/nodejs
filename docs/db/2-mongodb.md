@@ -1,4 +1,4 @@
-## ¿Qué es MongoDB?
+# ¿Qué es MongoDB?
 
 MongoDB es una base de datos orientada a documentos multiplataforma gratuita y de código abierto. Clasificada como una base de datos **NoSQL**, utiliza documentos similares a JSON con esquemas.
 
