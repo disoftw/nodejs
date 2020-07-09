@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         text: 'Streams',
-        link: '/stream/'
+        link: '/streams/'
       },
       {
         text: 'REST',
@@ -109,7 +109,56 @@ module.exports = {
             'write-stream-functions',
           ]
         }
-      ]
+      ],
+      '/rest/': [
+        {
+          title: 'API REST',
+          collapsable: false,
+          children: [
+            '',
+            '1-setup',
+            '2-request-handler',
+            '3-api-requests',
+            '4-get-users',
+            '5-users-route',
+            '6-users-post',
+            '7-get-users-id',
+            '8-update-users',
+            '9-status-codes',
+            '10-nodemon'
+          ]
+        }
+      ],
+       '/middlewares/': [
+        {
+          title: 'Middlewares',
+          collapsable: false,
+          children: [
+            '',
+            '11-error_handling',
+            '12-routes-code',
+            '13-body_parser',
+            '14-body_parser',
+            '15-cors',
+          ]
+        }
+      ],
+      '/db/': [
+        {
+          title: 'Base de datos',
+          collapsable: false,
+          children: [
+            '',
+            '2-mongodb',
+            '3-install_mongodb',
+            '4-mongoose',
+            '5-config',
+            '6-config',
+            '7-models',
+            '8-code-model'
+          ]
+        }
+      ],
     }
   },
 

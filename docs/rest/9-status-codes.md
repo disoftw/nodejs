@@ -21,6 +21,6 @@ Enviemos una solicitud POST usando Postman y veamos el resultado.
 
 **POST Request: localhost:3000/users**
 
-![](./post.png)
+<!-- ![](./post.png) -->
 
 > De ahora en adelante, solo utilizaremos los códigos de estado correctos para cada respuesta, donde los más comunes son 200, 201, 404 y 500.
