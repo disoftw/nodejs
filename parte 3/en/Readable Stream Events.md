@@ -41,4 +41,6 @@ readable.on('end', () => {
 
 In addition to the 'data' listener above, this one will also listen to the 'end' event and trigger the callback whenever the 'end' is emitted.
 
+---
+
 *The 'error' event can be emitted at any time. Reasons for this event are if the system fails to generate data, or if there is an invalid chunk of data.*
