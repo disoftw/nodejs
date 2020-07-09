@@ -69,7 +69,18 @@ module.exports = {
         {
           title: 'Core',
           collapsable: false,
-          children: ['', '5-modules', '6-http_server', '7-fs_module']
+          children: [
+            '',
+            '6-http_server',
+            '7-fs_module',
+            '8-update_files',
+            '9-async_vs_sync',
+            '10-path_module',
+            '11-events',
+            '12-timers',
+            '13-canceling_timers',
+            '14-streams',
+          ]
         }
       ]
     }
