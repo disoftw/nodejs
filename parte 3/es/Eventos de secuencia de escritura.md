@@ -46,9 +46,7 @@ Si se ejecuta el código, verá que el orden de las salidas es la siguiente:
 
 ## Eventos de secuencia de escritura: caso de estudio en js
 
-Repasaremos un ejemplo en el que usaremos el evento '**drain**' y veremos como funciona.
-
-Modifiquemos el ejemplo anterior para escuchar al evento '**drain**' y contar cuantas veces se llamará:
+Repasaremos un ejemplo en el que usaremos el evento '**drain**' y veremos como funciona. Modifiquemos el ejemplo anterior para escuchar al evento '**drain**' y contar cuantas veces se llamará:
 
 ```js
 const fs = require('fs');
@@ -91,3 +89,6 @@ writeOneMillionTimes(file, str, () => {
 });
 ```
 
+La funcionalidad del ejemplo anterior es similar a la anterior: estamos transmitiendo datos al archivo, sin embargo, en este ejemplo, estamos usando el evento '**drain**' donde espera hasta que el buffer del escritor se vacié y emita el evento '**drain**'. Después de recibir la emisión, nuevamente llamamos a la función de escritor y comenzamops a escribir datos en el archivo.
+
+*También contamos cuántas veces se emitió el evento '**drain**' e imprimimos al final.*

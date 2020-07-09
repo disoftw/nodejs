@@ -93,6 +93,4 @@ writeOneMillionTimes(file, str, () => {
 
 The functionality of the example above is similar to the previous one: we are streaming data into the file. However, in this example, we are using the 'drain' event where it waits until the writer's buffer becomes empty and emits the 'drain' event. After receiving the emit, again we call the writer function and start writing data into the file.
 
----
-
-We also count how many times did the 'drain' event emitted and print it at the end.
+*We also count how many times did the 'drain' event emitted and print it at the end.*

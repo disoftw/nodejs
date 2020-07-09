@@ -48,4 +48,4 @@ Cuando el cliente solicita un archivo grande, transmitimos un **fragmento** a la
 
 ---
 
-Con la configuración predetermnida, no puede servir un archivo más grande que el limite del bufer predeterminado en Node (2GB) sin usar secuencias.
+Con la configuración predeterminada, no puede servir un archivo más grande que el limite del bufer predeterminado en Node (2GB) sin usar secuencias.
