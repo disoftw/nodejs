@@ -1,6 +1,10 @@
 # Secuencia de escritura y lectura
 
+<<<<<<< HEAD
 Veamos como se utilizan las secuencias y comprendamos por qué son vitales para la aplicación de Node.js, comenzaremos usando una secuencia para crear un archivo grande para ver que tan utiles son.
+=======
+Veamos com o se utilizan las secuencias y comprendamos por qué son vitales para la aplicación de Node.js, comenzaremos usando una secuencia para crear un archivo grande para ver que tan utiles son.
+>>>>>>> part-3
 
 ```js
 const fs = require('fs');
@@ -30,6 +34,7 @@ server.on('request', (req, res) => {
 server.listen(3000);
 ```
 
+<<<<<<< HEAD
 Cuando un servidor recibe una solicitud, intentará servir el archivo mencionada de manera asincrona utilizando el metodo de `fs.readFile()`. El problema es cuanta memoria consumirá, pondrá el contenido del archivo en memoria de la computadora antes de asignarlo al objeto **response**. Al usar el método `fs.createReadStream()` nos permite canalizar la secuencia al objeto de respuesta.
 
 ```js
@@ -49,3 +54,6 @@ Cuando el cliente solicita un archivo grande, transmitimos un **fragmento** a la
 ---
 
 Con la configuración predeterminada, no puede servir un archivo más grande que el limite del bufer predeterminado en Node (2GB) sin usar secuencias.
+=======
+Cuando un servidor recibe una solicitud, intentará servir el archivo mencionada de manera asincrona utilizando el metodo de `fs.readFile()`. 
+>>>>>>> part-3
