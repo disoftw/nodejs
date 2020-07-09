@@ -31,4 +31,4 @@ El resultado es un archivo llamado '**myFile.txt**' con el cuerpo: "Un texto sim
 
 ---
 
-El parámetro de codificación opcional se usa cuando pasamos una cadena. Algunas de las opciones de codificación válidas son **ascii**, **utf8/utf-8**, **base64**, **binary**, **hex** y pocos más, [listado aqui](https://stackoverflow.com/questions/14551608/list-of-encodings-that-node-js-supports/14551669#14551669).
+El parámetro de codificación opcional se usa cuando pasamos una cadena. Algunas de las opciones de codificación válidas son **ascii**, **utf8/utf-8**, **base64**, **binary**, **hex** y pocos más, [listado aquí](https://stackoverflow.com/questions/14551608/list-of-encodings-that-node-js-supports/14551669#14551669).
