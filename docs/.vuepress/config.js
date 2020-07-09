@@ -9,7 +9,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-  base: '/nodejs-docs/',
+  base: '/nodejs/',
 
   /**
    * AntDocs theme for AntDesign for vue
@@ -49,6 +49,10 @@ module.exports = {
         link: '/intro/'
       },
       {
+        text: 'Core',
+        link: '/core/'
+      },
+      {
         text: 'Glosario',
         link: '/glossary/'
       }
@@ -58,7 +62,14 @@ module.exports = {
         {
           title: 'Intro',
           collapsable: false,
-          children: ['', 'base-de-datos', 'tdd']
+          children: ['', '2-npm', '3-config', '4-modules']
+        }
+      ],
+      '/core/': [
+        {
+          title: 'Core',
+          collapsable: false,
+          children: ['', '5-modules', '6-http_server', '7-fs_module']
         }
       ]
     }

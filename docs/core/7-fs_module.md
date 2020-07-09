@@ -1,0 +1,39 @@
+# El módulo fs
+
+Uno de los módulos más importantes en Node.js es **'fs'**. Nos proporciona el archivo de E/S. Para comenzar a usarlo, necesitamos llamar a require('fs'). Todos los métodos 'fs' tienen formas **asíncronas** y **síncronas**.
+
+Las tareas más comunes del módulo **fs** son leer, crear, actualizar, eliminar y renombrar archivos.
+
+Para leer archivos, use el método **fs.readFile ()** del módulo fs.
+
+```JS
+fs.readFile('/home/file', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+```
+
+Hay varias opciones para crear un archivo. Cada uno de ellos realiza una tarea ligeramente diferente. El método fs.writeFile() escribe asincrónicamente los datos en un archivo, reemplazando el archivo si ya existe (**los datos** pueden ser una cadena o un búfer).
+
+```JS
+fs.writeFile('file.txt', 'Hello World', (err) => {
+  if (err) throw err;
+  console.log ('¡El archivo se ha guardado!');
+});
+```
+
+:::warning IMPORTANTE
+Tenga en cuenta que no es seguro usar **fs.writeFile** varias veces en el mismo archivo sin esperar la devolución de llamada.
+:::
+
+El método **fs.appendFile ()** agrega datos asincrónicamente a un archivo, creando el archivo si aún no existe.
+
+```JS
+fs.appendFile('file.txt ','Texto para agregar', (err) => {
+  if (err) throw err;
+  console.log('¡El nuevo texto se agregó al archivo!');
+});
+```
+
+:::tip
+Todos los métodos y ejemplos anteriores son asíncronos. Si necesita que sean síncronos, agregue la palabra clave **Sync** a los nombres de los métodos, como **fs.readFileSync(), fs.appendFileSync()**, etc.
