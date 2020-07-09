@@ -53,6 +53,22 @@ module.exports = {
         link: '/core/'
       },
       {
+        text: 'Streams',
+        link: '/stream/'
+      },
+      {
+        text: 'REST',
+        link: '/rest/'
+      },
+      {
+        text: 'Middlewares',
+        link: '/middlewares/'
+      },
+      {
+        text: 'Base de datos',
+        link: '/db/'
+      },
+      {
         text: 'Glosario',
         link: '/glossary/'
       }
@@ -78,8 +94,19 @@ module.exports = {
             '10-path_module',
             '11-events',
             '12-timers',
-            '13-canceling_timers',
-            '14-streams',
+            '13-canceling_timers'
+          ]
+        }
+      ],
+      '/streams/': [
+        {
+          title: 'Streams',
+          collapsable: false,
+          children: [
+            '',
+            'write-and-read-streams',
+            'write-stream-events',
+            'write-stream-functions',
           ]
         }
       ]
