@@ -41,7 +41,8 @@ If you run the code, you will see that the order of the outputs is the following
 2. end
 3. OnClose
 
-Check out a case study on writable stream events.
+---
+*Check out a case study on writable stream events.*
 
 ## Writable Stream Events: Case Study js
 
@@ -49,12 +50,12 @@ In this lesson, we will go over an example where we will use the 'drain' event a
 
 Let's modify our previous example to listen on 'drain' event and count how many times it will be called:
 
+```js
 const fs = require('fs');
 const file = fs.createWriteStream('./big-file.txt');
 
 const str = 'This is just a text that we are going to write to the big-file.txt one million times. So it becomes a big file (around 150MB) for Stream example purposes.\n';
 
-```js
 const writeOneMillionTimes = (writeStream, data, callback) => {
   let i = 1000000;
   drain_counter = 0;

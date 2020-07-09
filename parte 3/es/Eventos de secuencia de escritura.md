@@ -37,3 +37,57 @@ file.end(() => {
 ```
 
 Si se ejecuta el código, verá que el orden de las salidas es la siguiente:
+1. OnFinish
+2. end
+3. OnClose
+
+---
+*Observa este caso de estudio de evento de flujos de escritura:*
+
+## Eventos de secuencia de escritura: caso de estudio en js
+
+Repasaremos un ejemplo en el que usaremos el evento '**drain**' y veremos como funciona.
+
+Modifiquemos el ejemplo anterior para escuchar al evento '**drain**' y contar cuantas veces se llamará:
+
+```js
+const fs = require('fs');
+const file = fs.createWriteStream('./big-file.txt');
+
+const str = 'This is just a text that we are going to write to the big-file.txt one million times. So it becomes a big file (around 150MB) for Stream example purposes.\n';
+
+const writeOneMillionTimes = (writeStream, data, callback) => {
+  let i = 1000000;
+  drain_counter = 0;
+  const writer = () => {
+    let ok = true;
+    do {
+      i--;
+      if (i === 0) {
+        // last time! So, it should call the callback.
+        writeStream.write(data, callback);
+        writeStream.end(() => {
+          console.log('drain_counter: ' + drain_counter);
+        });
+        console.log('drain_counter: ' + drain_counter);
+      } else {
+        // see if we should continue, or wait
+        // don't pass the callback, because we're not done yet.
+        ok = writeStream.write(data);
+      }
+    } while (i > 0 && ok);
+
+    if (i > 0) {
+      // had to stop early! write some more once it drains
+      writeStream.once('drain', writer); // calls the function when drain got emitted
+      drain_counter++;
+    }
+  }
+  writer();
+}
+
+writeOneMillionTimes(file, str, () => {
+  console.log('Task complete');
+});
+```
+
