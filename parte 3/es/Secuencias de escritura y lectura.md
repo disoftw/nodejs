@@ -1,10 +1,6 @@
 # Secuencia de escritura y lectura
 
-<<<<<<< HEAD
 Veamos como se utilizan las secuencias y comprendamos por qué son vitales para la aplicación de Node.js, comenzaremos usando una secuencia para crear un archivo grande para ver que tan utiles son.
-=======
-Veamos com o se utilizan las secuencias y comprendamos por qué son vitales para la aplicación de Node.js, comenzaremos usando una secuencia para crear un archivo grande para ver que tan utiles son.
->>>>>>> part-3
 
 ```js
 const fs = require('fs');
