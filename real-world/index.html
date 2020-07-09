@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Introducción | Node.js</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/nodejs/assets/css/0.styles.5ef21b33.css" as="style"><link rel="preload" href="/nodejs/assets/js/app.9b68ad1b.js" as="script"><link rel="preload" href="/nodejs/assets/js/2.1eaf5745.js" as="script"><link rel="preload" href="/nodejs/assets/js/28.5720a491.js" as="script"><link rel="prefetch" href="/nodejs/assets/js/10.e5e910dd.js"><link rel="prefetch" href="/nodejs/assets/js/11.9b9c7544.js"><link rel="prefetch" href="/nodejs/assets/js/12.d6261679.js"><link rel="prefetch" href="/nodejs/assets/js/13.c1d86efd.js"><link rel="prefetch" href="/nodejs/assets/js/14.5bf668fb.js"><link rel="prefetch" href="/nodejs/assets/js/15.4c639a09.js"><link rel="prefetch" href="/nodejs/assets/js/16.34ce53d7.js"><link rel="prefetch" href="/nodejs/assets/js/17.b838b77f.js"><link rel="prefetch" href="/nodejs/assets/js/18.ed5a7c8d.js"><link rel="prefetch" href="/nodejs/assets/js/19.ff1db5bd.js"><link rel="prefetch" href="/nodejs/assets/js/20.c2a80064.js"><link rel="prefetch" href="/nodejs/assets/js/21.bfa60502.js"><link rel="prefetch" href="/nodejs/assets/js/22.79890017.js"><link rel="prefetch" href="/nodejs/assets/js/23.cd388345.js"><link rel="prefetch" href="/nodejs/assets/js/24.a9b22038.js"><link rel="prefetch" href="/nodejs/assets/js/25.be59cec0.js"><link rel="prefetch" href="/nodejs/assets/js/26.aa69e45c.js"><link rel="prefetch" href="/nodejs/assets/js/27.4d334000.js"><link rel="prefetch" href="/nodejs/assets/js/29.f1a2113a.js"><link rel="prefetch" href="/nodejs/assets/js/3.b6b6cec9.js"><link rel="prefetch" href="/nodejs/assets/js/30.2b1b814b.js"><link rel="prefetch" href="/nodejs/assets/js/4.aae63045.js"><link rel="prefetch" href="/nodejs/assets/js/5.ad28c87c.js"><link rel="prefetch" href="/nodejs/assets/js/6.8d56e307.js"><link rel="prefetch" href="/nodejs/assets/js/7.5f4e3148.js"><link rel="prefetch" href="/nodejs/assets/js/8.75b88a8a.js"><link rel="prefetch" href="/nodejs/assets/js/9.5bc03069.js">
+    <link rel="stylesheet" href="/nodejs/assets/css/0.styles.5ef21b33.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="ant-row"><div class="sidebar-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/nodejs/" class="router-link-active home-link"><img src="https://pablomagaz.com/content/images/2020/01/NodeJs.png" alt="Node.js" class="logo"> <span class="site-name">Node.js</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/nodejs/intro/">
+          Intro
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/nodejs/core/">
+          Core
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/nodejs/glossary/">
+          Glosario
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <a href="https://github.com/rnovec" target="_blank" rel="noopener noreferrer" class="repo-link"><i aria-label="icon: github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></i></a></nav></div></div> <!----></header> <aside class="sidebar"><!----> <!----></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="introduccion"><a href="#introduccion" class="header-anchor">#</a> Introducción</h1> <p>Una vez instaladas las herraminetas necesarias (Node.js, VSCode y NPM) podemos empezar a crear nuestro servidor con Node.js.</p> <h2 id="instalar-dependencias"><a href="#instalar-dependencias" class="header-anchor">#</a> Instalar dependencias</h2> <p>NOTA: En algunos sistemas es necesario tener privilegios de superusuario para instalar librerias globales.</p> <p><strong>Express Generator</strong></p> <div class="language- extra-class"><pre><code>$ npm i -g express-generator
+</code></pre></div><p><strong>Nodemon</strong></p> <div class="language- extra-class"><pre><code>$ npm i -g nodemon
+</code></pre></div><h2 id="crear-el-proyecto"><a href="#crear-el-proyecto" class="header-anchor">#</a> Crear el proyecto</h2> <p>Abrimos una terminal de nuestro sistema, y ejecutamos el siguiente comando:</p> <p>NOTA: cambie el valor de <strong>nombredelproyecto</strong> por el nombre de su proyecto o use punto (<strong>.</strong>) para indicar que esta dentro de la carpeta raiz.</p> <div class="language- extra-class"><pre><code>$ express --view=hbs --git nombredelproyecto
+</code></pre></div><p>Ingrese al proyecto desde la terminal, o abra el proyecto en VSCode y use una terminal</p> <div class="language- extra-class"><pre><code>$ cd nombredelproyecto
+</code></pre></div><p>Instale las dependencias iniciales del proyecto:</p> <div class="language- extra-class"><pre><code>$ npm install
+</code></pre></div><p>Finalmente, ejecute el proyecto con nodemon para tener un <em>hot reloading</em></p> <div class="language- extra-class"><pre><code>$ nodemon
+</code></pre></div><h2 id="estructura-inicial"><a href="#estructura-inicial" class="header-anchor">#</a> Estructura inicial</h2> <div class="language- extra-class"><pre class="language-text"><code>├── app.js
+├── bin
+│   └── www
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│   └── style.css
+├── routes
+│   ├── index.js
+│   └── users.js
+└── views
+├── error.hbs
+├── index.hbs
+└── layout.hbs
+</code></pre></div><p>Los archivos importantes corresponden a <code>bin/www</code> que es donde se encuentra el servidor de Node y <code>app.js</code> que es la aplicaión de Express y sus respectivas API's de ejemplo.</p> <h2 id="estructura-propuesta"><a href="#estructura-propuesta" class="header-anchor">#</a> Estructura propuesta</h2> <p>Se crean 3 carpetas adicionales:</p> <ul><li><p><code>dao</code>: que corresponde al Objeto de Acceso de Datos (Data Access Object) aqui ira la conexion y definición de los modelos de Base de datos.</p></li> <li><p><code>controllers</code>: Controladores individuales del proyecto, aquellas funciones que definiran la conexión, manipulación de la base de datos y lógica de negocio.</p></li> <li><p><code>test</code>: Pruebas unitarias y de integración del proyecto</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>├── app.js
+├── bin
+│   └── www
+├── controllers
+├── dao
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│   └── style.css
+├── routes
+│   ├── index.js
+│   └── users.js
+├── test
+└── views
+├── error.hbs
+├── index.hbs
+└── layout.hbs
+</code></pre></div><h3 id="package-json"><a href="#package-json" class="header-anchor">#</a> Package.json</h3> <p>El archivo principal de nuestro proyecto que contiene la descripción general del proyecto asi como la relación de dependencias o librerias que utiliza.</p> <p>NOTA: Todos los proyectos que corren con <strong>Node.js</strong> tienen un <code>package.json</code>, asegurese de que exista una carpeta <code>node_modules</code> que se crea al ejectutar <strong>npm install</strong>; esa carpeta contiene los archivos de instalación y suele ser muy pesado por lo que no se sube al repositorio (git) y debe estar en el <code>.gitignore</code>. Sino existe quiere decir que las dependecias no estan instaladas.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node-example&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node ./bin/www&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;cookie-parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.4.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;debug&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~2.6.9&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~4.16.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hbs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~4.0.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;http-errors&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.6.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;morgan&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.9.1&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="modulos-y-buenas-practicas-ecmascript-2019"><a href="#modulos-y-buenas-practicas-ecmascript-2019" class="header-anchor">#</a> Modulos y buenas practicas ECMASCript 2019</h2> <ul><li>Usar <code>const</code> en vez de <code>var</code> donde sea neceario.</li> <li>Usar arrow functions <code>=&gt;</code> en vez de funciones con scope <code>function</code>.</li> <li><code>module.exports = {}</code> use la exportación de modules en Node.js para que pueda utilizar, funciones, clases y variables fuera del archivo donde esta declarado.</li></ul> <p>Más adelante estaremos viendo como cambia el <strong>package.json</strong> a medida que crece el proyecto y se requieren diferentes configuraciones.</p> <h2 id="servidor-web-y-estructura-del-codigo"><a href="#servidor-web-y-estructura-del-codigo" class="header-anchor">#</a> Servidor web y estructura del código</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Module dependencies.
+ */</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../app'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> debug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'debug'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'node-example:server'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Get port from environment and store in Express.
+ */</span>
+
+<span class="token keyword">const</span> port <span class="token operator">=</span> <span class="token function">normalizePort</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">PORT</span> <span class="token operator">||</span> <span class="token string">'3000'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'port'</span><span class="token punctuation">,</span> port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Create HTTP server.
+ */</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Listen on provided port, on all network interfaces.
+ */</span>
+
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> onError<span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'listening'</span><span class="token punctuation">,</span> onListening<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ...</span>
+</code></pre></div><h2 id="express-application"><a href="#express-application" class="header-anchor">#</a> Express application</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> createError <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http-errors'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> cookieParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cookie-parser'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> logger <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'morgan'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> indexRouter <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./routes/index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> usersRouter <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./routes/users'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// view engine setup</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>\_\_dirname<span class="token punctuation">,</span> <span class="token string">'views'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'view engine'</span><span class="token punctuation">,</span> <span class="token string">'hbs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">logger</span><span class="token punctuation">(</span><span class="token string">'dev'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">urlencoded</span><span class="token punctuation">(</span><span class="token punctuation">{</span> extended<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">cookieParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token function">static</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>\_\_dirname<span class="token punctuation">,</span> <span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> indexRouter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/users'</span><span class="token punctuation">,</span> usersRouter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ...</span>
+</code></pre></div><h3 id="middlewares"><a href="#middlewares" class="header-anchor">#</a> Middlewares</h3> <p>El método <code>.use()</code> de una aplicaión de Express es utilizada para establecer middlewares los cuales son funciones que son llamdas siempre al inicio de cada petición y que por lo general son utilizadas para modificar o manejar la petición antes de que llegue a la ruta.</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main> <!----></div><div class="global-ui"><!----></div></div>
+    <script src="/nodejs/assets/js/app.9b68ad1b.js" defer></script><script src="/nodejs/assets/js/2.1eaf5745.js" defer></script><script src="/nodejs/assets/js/28.5720a491.js" defer></script>
+  </body>
+</html>
