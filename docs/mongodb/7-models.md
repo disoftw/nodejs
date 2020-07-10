@@ -4,11 +4,26 @@ Toda la configuración está hecha. Tenemos un MongoDB en funcionamiento y Mongo
 
 Para poder almacenar datos en nuestra base de datos, necesitamos modelos Mongoose. Debe definir cómo va a almacenar objetos en la base de datos, luego crear un modelo (Objeto JavaScript) basado en eso. Este modelo tendrá algunas funciones que lo ayudarán a agregar, actualizar, eliminar, fusionar, buscar, ordenar y realizar muchas más operaciones en ese conjunto de datos.
 
->Puedes leer más sobre los modelos en el oficial [MongoDB] (https://docs.mongodb.com) y [Mongoose] (http://mongoosejs.com/docs/guide.html) documentación.
-
+:::tip
+Puedes leer más sobre los modelos en el oficial [MongoDB](https://docs.mongodb.com) y [Mongoose](http://mongoosejs.com/docs/guide.html) documentación.
+:::
 
 Ahora, recordemos nuestra estructura de proyecto desde [aquí](). Necesitamos agregar el directorio "modelos" en nuestro proyecto para que se vea así:
  
+```
+.
+├── api
+│      ├── models
+│      │      ├── code.js
+│      │      └── user.js
+│      └── routes
+│               ├── codes.js
+│               └── users.js
+├── app.js
+├── package.json
+└── server.js
+3 directories, 7 files
+```
 
 Un modelo es solo un objeto JavaScript que se construye sobre Mongoose. Comencemos con el archivo user.js. En primer lugar, debe requerir la mangosta. A continuación necesitamos el esquema:
 
@@ -44,4 +59,5 @@ La función modelo toma dos argumentos: primero, el nombre que vamos a usar inte
 module.exports = mongoose.model('User', userSchema);
 ```
 
->El esquema es como el diseño del objeto que queremos usar, en el que el modelo es el objeto mismo basado en ese esquema.
+:::warning INFO
+El esquema es como el diseño del objeto que queremos usar, en el que el modelo es el objeto mismo basado en ese esquema.

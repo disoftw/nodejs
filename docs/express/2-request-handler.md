@@ -64,7 +64,7 @@ Para ejecutar el servidor, necesita el siguiente comando:
 
     $ node server.js
 
-Iniciará el servidor en su localhost en el puerto **3000** si no hay un **.Env** configurado.
+Iniciará el servidor en su localhost en el puerto **3000** si no hay un [.env]() configurado.
 
 :::warning
 En la próxima lección, aprenderá cómo enviar una solicitud y obtener una respuesta del servidor.

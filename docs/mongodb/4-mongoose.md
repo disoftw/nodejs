@@ -6,4 +6,5 @@ En otras palabras, como se menciona en su [sitio web oficial](https://mongoosejs
 
 Por defecto, es compatible con un entorno asíncrono, por lo que puede usar sus métodos de módulo como cualquier otra herramienta en Node.js.
 
+:::tip
 Puede encontrar información adicional sobre su paquete npm [aquí](https://www.npmjs.com/package/mongoose).
