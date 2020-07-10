@@ -35,7 +35,11 @@ Vamos a iniciar/reiniciar el servidor y probar rápidamente los nuevos métodos 
 
 **PATCH Request: localhost:3000/users/admin**
 
+![](../../assets/patch.png)
+
 **DELETE Request: localhost:3000/users/1234**
+
+![PostmanDEL]()
 
 :::tip
 Es una buena práctica probar cada nueva ruta justo después de la creación para evitar errores inesperados más adelante.

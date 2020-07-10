@@ -61,4 +61,5 @@ const usersRoutes = require('./api/routes/users')
 app.use('/users', usersRoutes)
 ```
 
+:::tip
 Tenga en cuenta que si en users.js escribimos nuestra ruta GET como: '/**users**/' en lugar de '/', nuestra ruta completa será: **localhost: 3000/users/users**, que **no** es el nombre deseado.

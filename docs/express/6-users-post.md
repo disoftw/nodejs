@@ -22,9 +22,12 @@ No olvide reiniciar su servidor para aplicar los cambios. Para eso, puede matar 
 
     $ node server.js
 
-**Solicitud GET: localhost:3000/users**
+**GET: localhost:3000/users**
 
-**Solicitud POST: localhost:3000/users**
+![PostmanGET]()
+
+**POST: localhost:3000/users**
+![PostmanGET](../../assets/post.png)
 
 :::warning
 Tenga en cuenta que ya no puede enviar una solicitud a la **ruta raíz** (localhost:3000) ya que no hay controladores para eso. Además, como se especifican las rutas de los usuarios, solo aceptará la solicitud GET y POST y fallará (devolverá un error) en cualquier otro tipo.

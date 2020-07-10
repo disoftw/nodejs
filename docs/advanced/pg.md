@@ -1,4 +1,4 @@
-# Bases de datos
+# Postgres
 
 Para conectarnos a una base de datos debemos instalar las dependencias que corresponden a la base de datos que queremos acceder por ejemplo PostgreSQL, MySQL, MongoDB, etc...
 
@@ -52,3 +52,5 @@ const client = new Client({
 })
 
 ```
+
+## Consultas SQL

@@ -34,9 +34,14 @@ router.get('/:userID', (req, res, next) => {
 Aquí, comparamos la ID con la cadena 'admin' y devolvemos un mensaje personalizado como lo hicimos antes y respondemos con uno diferente en otros casos.
 
 Ahora, intentemos entrar a la ruta con diferentes parametros en Postman:
+
 **Solicitud GET: localhost:3000/users/admin**
 
+![PostmanGET]()
+
 **Solicitud GET: localhost:3000/usuarios/1234**
+
+![PostmanGET]()
 
 :::warning 
 ¡No olvide **iniciar/reiniciar** su servidor antes de probarlo con Postman!

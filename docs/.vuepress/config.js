@@ -37,7 +37,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/rnovec',
+    repo: 'https://github.com/disoftw',
     editLinks: false,
     logo: 'https://pablomagaz.com/content/images/2020/01/NodeJs.png',
     docsDir: '',
@@ -170,6 +170,7 @@ module.exports = {
             '',
             'pg',
             'tdd',
+            'jwt'
           ]
         }
       ],
