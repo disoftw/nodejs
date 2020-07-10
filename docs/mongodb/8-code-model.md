@@ -25,4 +25,5 @@ Para eso necesitamos agregar un nuevo campo en nuestro schema , el cual tomará 
  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 ```
 
-> Si estas usando demasiadas relaciones en tu schema, entonces debes cambiarte a bases de datos basados en SQL como MySQL ó PostgreSQL
+:::tip
+ Si estas usando demasiadas relaciones en tu schema, entonces debes cambiarte a bases de datos basados en SQL como **MySQL** ó **PostgreSQL**
