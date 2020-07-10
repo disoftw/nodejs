@@ -108,9 +108,12 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'write-and-read-streams',
-            'write-stream-events',
-            'write-stream-functions',
+            '2-writable_readable_streams',
+            '3-writable_stream_events',
+            '4-writable_stream_functions',
+            '5-readable_stream_events',
+            '6-readable_stream_funtions',
+            '7-piping'
           ]
         }
       ],

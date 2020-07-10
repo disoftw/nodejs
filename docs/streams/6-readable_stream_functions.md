@@ -1,4 +1,4 @@
-# funciones de secuencia de lectura
+# Funciones de secuencia de lectura
 
 Repasaremos las funciones importantes y veamos para qué se utilizan.
 

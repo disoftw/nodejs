@@ -1,4 +1,4 @@
-# Tubería
+# Tuberías
 
 La tubería es un mecanismo útil que le permite leer datos del origen y escribir en el destino sin administrar el flujo usted mismo.
 
