@@ -65,8 +65,12 @@ module.exports = {
         link: '/middlewares/'
       },
       {
-        text: 'Base de datos',
-        link: '/db/'
+        text: 'MongoDB',
+        link: '/mongodb/'
+      },
+      {
+        text: 'Avanzado',
+        link: '/advanced/'
       },
       {
         text: 'Glosario',
@@ -137,14 +141,13 @@ module.exports = {
             '11-error_handling',
             '12-routes-code',
             '13-body_parser',
-            '14-body_parser',
             '15-cors',
           ]
         }
       ],
-      '/db/': [
+      '/mongodb/': [
         {
-          title: 'Base de datos',
+          title: 'MongoDB',
           collapsable: false,
           children: [
             '',
@@ -155,6 +158,17 @@ module.exports = {
             '6-config',
             '7-models',
             '8-code-model'
+          ]
+        }
+      ],
+      '/advanced/': [
+        {
+          title: 'Conceptos Avanzados',
+          collapsable: false,
+          children: [
+            '',
+            'pg',
+            'tdd',
           ]
         }
       ],

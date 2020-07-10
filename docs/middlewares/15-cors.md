@@ -1,4 +1,4 @@
-## Intercambio de recursos de origen cruzado js
+# CORS
 
 **Intercambio de recursos de origen cruzado (CORS)** es un mecanismo que permite solicitar recursos restringidos en una página web desde **otro dominio** fuera del dominio desde el que se sirvió el primer recurso.
 
@@ -28,8 +28,9 @@ app.use((req, res, next) => {
 
 Aquí estamos configurando dos encabezados. Primero, el encabezado "**Access-Control-Allow-Origin**" controla quién puede enviar una solicitud. Al darle el valor *, le damos permiso a cualquiera. Para restringir el permiso a un dominio específico, escriba el dominio en lugar del asterisco (*).
 
->Es importante saber que configurar un dominio específico solo lo protegerá de los navegadores. Herramientas como Postman y CURL ignoran esos datos y pueden enviar una solicitud en cualquier condición de CORS.
-
+:::tip
+Es importante saber que configurar un dominio específico solo lo protegerá de los navegadores. Herramientas como Postman y CURL ignoran esos datos y pueden enviar una solicitud en cualquier condición de CORS.
+:::
 
 El siguiente encabezado es "**Access-Control-Allow-Headers**", que nos permite configurar diferentes tipos de encabezados con la solicitud. En este caso, "**Origen, X-Solicitado con, Tipo de contenido, Aceptar, Autorización**".
 
@@ -37,4 +38,5 @@ La condición "**req.method === 'OPTIONS'**" se envía de forma predeterminada d
 
 Pero este middleware bloqueará todas las solicitudes entrantes. Necesitamos llamar "return next ()" al final, por lo que después de configurar los encabezados (no enviar una respuesta de método, porque tiene su respuesta / retorno), continuará a nuestros otros middlewares y no se atascará ahí.
 
->En el primer caso, no estamos devolviendo una respuesta (solo configurando). Pero en el último caso, donde los navegadores buscan métodos válidos, debemos enviar una respuesta. En este caso, es solo un objeto vacío.
+:::warning IMPORTANTE
+En el primer caso, no estamos devolviendo una respuesta (solo configurando). Pero en el último caso, donde los navegadores buscan métodos válidos, debemos enviar una respuesta. En este caso, es solo un objeto vacío.

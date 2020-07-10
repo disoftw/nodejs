@@ -53,4 +53,5 @@ Entonces, enviemos una solicitud incorrecta que no se maneja y veamos el resulta
 
 Intente cambiar el cuerpo de JSON para leer el mensaje de error como se muestra arriba y envíe la misma solicitud nuevamente para ver la diferencia.
 
-> Es esencial distinguir entre los **manejadores de Solicitud** y los **manejadores de Error**. Se implementan de manera diferente y funcionan de manera diferente en el marco Express. Los **manejadores de solicitudes** obtendrán como máximo 3 parámetros (como req, res y next), pero los **manejadores de errores** necesitan 4 parámetros (como **error, req, res** y **next**).
+:::warning IMPORTANTE
+Es esencial distinguir entre los **manejadores de Solicitud** y los **manejadores de Error**. Se implementan de manera diferente y funcionan de manera diferente en el marco Express. Los **manejadores de solicitudes** obtendrán como máximo 3 parámetros (como req, res y next), pero los **manejadores de errores** necesitan 4 parámetros (como **error, req, res** y **next**).
