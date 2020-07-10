@@ -170,6 +170,7 @@ module.exports = {
             '',
             'pg',
             'tdd',
+            'jwt'
           ]
         }
       ],
