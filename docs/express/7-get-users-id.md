@@ -1,4 +1,4 @@
-# Obtener el usuario por ID js
+# Obtener el usuario por ID
 
 Ahora queremos obtener los datos de un solo usuario por su ID. Nuevamente vamos a utilizar una solicitud GET, pero en este caso, la ruta debe ser dinámica. Por ejemplo, '**/users/1234**' o '**/users/ admin**' etc. Queremos procesar todas estas rutas en un solo controlador (handler).
 
@@ -9,7 +9,7 @@ router.get('/:userID', (req, res, next) => {
   const id = req.params.userID;
 });
 ```
-Entonces, aquí el userID es un marcador de posición (placeholder) para la variable de parámetro de solicitud (indicado por: (colon) ), al que se puede acceder desde **req.params.userID**. Puede usar cualquier nombre válido para variables de parámetros de solicitud.
+Entonces, aquí el userID es un marcador de posición (placeholder) para la variable de parámetro de solicitud (indicado por **':'**), al que se puede acceder desde **req.params.userID**. Puede usar cualquier nombre válido para variables de parámetros de solicitud.
 
 Ahora manejemos el ID. Por ejemplo, verifiquemos el ID de usuario con el valor 'admin' y respondamos correctamente.
 ```js
@@ -38,4 +38,5 @@ Ahora, intentemos entrar a la ruta con diferentes parametros en Postman:
 
 **Solicitud GET: localhost:3000/usuarios/1234**
 
->¡No olvide **iniciar/reiniciar** su servidor antes de probarlo con Postman!
+:::warning 
+¡No olvide **iniciar/reiniciar** su servidor antes de probarlo con Postman!

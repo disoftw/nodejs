@@ -7,8 +7,9 @@ Hay un paquete npm llamado "**nodemon**" que reinicia el servidor cada vez que h
 
   $ npm install --save-dev nodemon
 
-> Tenga en cuenta que usamos **--save-dev** para la opción. La parte **--save** significa que agregará este paquete dentro de las dependencias del archivo **package.json** y la parte **-dev** indica que lo agregará dentro de devDependencies , porque no necesitamos dicha herramienta cuando publicamos u hospedamos nuestro servidor.
-
+:::tip 
+Tenga en cuenta que usamos **--save-dev** para la opción. La parte **--save** significa que agregará este paquete dentro de las dependencias del archivo **package.json** y la parte **-dev** indica que lo agregará dentro de devDependencies , porque no necesitamos dicha herramienta cuando publicamos u hospedamos nuestro servidor.
+:::
 Después de la instalación, puede verificar el archivo package.json para las siguientes líneas (la versión puede variar):
 
 ```json
@@ -39,4 +40,5 @@ Ahora necesita ejecutar el siguiente comando para iniciar el servidor:
 
     $ npm start
 
-> Se iniciará el servidor de nodemon, que vigila constantemente todos los cambios (incluso los comentarios) y reinicia el servidor en cada cambio.
+:::warning IMPORTANTE
+Se iniciará el servidor de nodemon, que vigila constantemente todos los cambios (incluso los comentarios) y reinicia el servidor en cada cambio.

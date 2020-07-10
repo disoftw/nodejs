@@ -35,7 +35,7 @@ server.listen (puerto, nombre de host, () => {
 El servidor escucha el puerto y el host, donde la devolución de llamada es console.log y devuelve los datos al terminal.
 
 Ahora podemos ejecutar el servidor usando el comando: **node app.js.**
-Dentro del navegador, visite [http://localhost:3000](http://localhost:3000), y verá el mensaje **'¡Hola, Mundo!'**. Y verá **"Servidor ejecutándose en http://127.0.0.1:3000/"** en la terminal.
+Dentro del navegador, visite [http://localhost:3000](http://localhost:3000), y verá el mensaje _'¡Hola, Mundo!'_. Y verá _"Servidor ejecutándose en http://127.0.0.1:3000/"_ en la terminal.
 
 :::tip 
-Hasta ahora no hemos usado package.json o node_modules, pero es una buena práctica tenerlos desde el principio porque siempre los vamos a necesitar.
+Hasta ahora no hemos usado _package.json_ o _node_modules_, pero es una buena práctica tenerlos desde el principio porque siempre los vamos a necesitar.

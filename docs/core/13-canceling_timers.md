@@ -19,4 +19,5 @@ const myTime = setInterval(() => {
 
 El código anterior imprimirá los números generados aleatoriamente que van del 1 al 10, cada 1 segundo. Si el número es mayor que 8, llamará al **clearInterval()** en nuestra variable de tiempo, myTime.
 
-> clearImmediate() cancela el objeto creado por setImmediate().clearTimeout() cancela el objeto creado por setTimeout().
+:::tip
+`clearImmediate()` cancela el objeto creado por `setImmediate().clearTimeout()` cancela el objeto creado por `setTimeout()`.

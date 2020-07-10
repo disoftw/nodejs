@@ -1,4 +1,4 @@
-# Actualizar usuarios
+# Actualizar usuarios (PATCH)
 
 Completemos nuestras rutas **/users** con solicitudes **PATCH** y **DELETE**.
 Nuevamente, necesitamos un usuario específico para esas acciones, por lo que debemos usar "userID" en las rutas. Esto ayudará a modificar al usuario por su ID única.
@@ -37,4 +37,5 @@ Vamos a iniciar/reiniciar el servidor y probar rápidamente los nuevos métodos 
 
 **DELETE Request: localhost:3000/users/1234**
 
-> Es una buena práctica probar cada nueva ruta justo después de la creación para evitar errores inesperados más adelante.
+:::tip
+Es una buena práctica probar cada nueva ruta justo después de la creación para evitar errores inesperados más adelante.

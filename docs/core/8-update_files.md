@@ -16,7 +16,9 @@ Este método puede tomar diferentes indicadores que cambian su comportamiento. E
  - **'a'**: archivo abierto para agregar. El archivo se crea si no existe.
  - **'a+'**: archivo abierto para leer y agregar. El archivo se crea si no existe.
 
- > Las banderas **'w'** y **'a'** también se pueden usar con una bandera **'x'** como **'wx+'** o **'ax'**. Estos funcionan de manera similar a la bandera original pero **fallan si el archivo existe**.
+:::tip 
+Las banderas **'w'** y **'a'** también se pueden usar con una bandera **'x'** como **'wx+'** o **'ax'**. Estos funcionan de manera similar a la bandera original pero **fallan si el archivo existe**.
+:::
 
  El siguiente ejemplo muestra cómo agregar un archivo usando ambos fs.open() y fs.appendFile():
 
@@ -32,7 +34,9 @@ fs.open('file.txt', 'a', (err, fd) => {
 });
 ```
 
-> Si necesita la versión síncrona, utilice el método **fs.openSync()**.
+:::tip
+Si necesita la versión síncrona, utilice el método **fs.openSync()**.
+:::
 
 Para renombrar archivos, use el método **fs.rename()**.
 

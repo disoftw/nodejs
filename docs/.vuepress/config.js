@@ -57,8 +57,8 @@ module.exports = {
         link: '/streams/'
       },
       {
-        text: 'REST',
-        link: '/rest/'
+        text: 'Express',
+        link: '/express/'
       },
       {
         text: 'Middlewares',
@@ -110,9 +110,9 @@ module.exports = {
           ]
         }
       ],
-      '/rest/': [
+      '/express/': [
         {
-          title: 'API REST',
+          title: 'Express',
           collapsable: false,
           children: [
             '',
@@ -120,7 +120,6 @@ module.exports = {
             '2-request-handler',
             '3-api-requests',
             '4-get-users',
-            '5-users-route',
             '6-users-post',
             '7-get-users-id',
             '8-update-users',

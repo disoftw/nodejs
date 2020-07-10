@@ -1,4 +1,4 @@
-# Introducción a Node.js js
+# Introducción a Node.js
 
 **Node.js** es un entorno JavaScript de código abierto, multiplataforma en tiempo de ejecución que ejecuta código JavaScript del lado del **servidor**.
 

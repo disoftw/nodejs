@@ -50,7 +50,7 @@ Node.js® es un entorno de ejecución para JavaScript construido con el [motor d
 - **Raul Novelo** - [@rnovec](https://github.com/rnovec)
 
 ## Agradecimientos
-A las miembros de la división que contribuyeron a la traducción de este material al español.
+A los miembros de la división que contribuyeron a la traducción de este material al español.
 - **Luis Navarrete**
 - **Rafael Salazar**
 - **Paul Mena**
@@ -61,6 +61,6 @@ See also the list of [contributors](https://github.com/disoftw/nodejs/contributo
 
 
 ## Acerca de este material
-Este material esta basado del **tutorial de Node.js** de la plataforma [SoloLearn]() y traducido al español con fines didácticos.
+Este material esta basado del **tutorial de Node.js** de la plataforma [SoloLearn](https://www.sololearn.com/) y traducido al español con fines didácticos.
 
 Made with ❤️ by [AAAIMX](https://github.com/aaaimx) 😊
