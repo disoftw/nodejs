@@ -112,7 +112,7 @@ module.exports = {
             '3-writable_stream_events',
             '4-writable_stream_functions',
             '5-readable_stream_events',
-            '6-readable_stream_funtions',
+            '6-readable_stream_functions',
             '7-piping'
           ]
         }
@@ -141,7 +141,6 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            '11-error_handling',
             '12-routes-code',
             '13-body_parser',
             '15-cors',
@@ -154,7 +153,6 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            '2-mongodb',
             '3-install_mongodb',
             '4-mongoose',
             '5-config',
